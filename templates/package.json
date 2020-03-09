@@ -1,5 +1,5 @@
 {
-  "name": "indevweb",
+  "name": "{{ name }}",
   "version": "0.0.0",
   "main": "index.js",
   "repository": "https://github.com/devalexandre/preact-styled-nextjs.git",

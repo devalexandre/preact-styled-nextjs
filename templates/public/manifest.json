@@ -1,6 +1,6 @@
 {
-  "name": "Indev Web",
-  "short_name": "Indev Web",
+  "name": "{{ name }}",
+  "short_name": "{{ name }} ",
   "theme_color": "#b921f3",
   "background_color": "#b921f3",
   "display": "standalone",
