@@ -1,6 +1,6 @@
 {
-  "name": "preact-styled-nextjs",
-  "version": "1.0.0",
+  "name": "{{ name }}",
+  "version": "0.0.0",
   "main": "index.js",
   "repository": "https://github.com/devalexandre/preact-styled-nextjs.git",
   "author": "devalexandre <alexandre@indev.net.br>",
@@ -9,7 +9,8 @@
   "scripts": {
     "dev": "next",
     "build": "next build && next export -o build",
-    "start": "NODE_ENV=production next start"
+    "start": "NODE_ENV=production next start",
+    "lint": "eslint src"
   },
   "dependencies": {
     "next": "^9.2.3-canary.21",
@@ -18,9 +19,18 @@
     "react": "github:preact-compat/react#1.0.0",
     "react-dom": "github:preact-compat/react-dom#1.0.0",
     "react-ssr-prepass": "npm:preact-ssr-prepass@^1.0.1",
-    "styled-components": "^4.0.0"
+    "styled-components": "^4.0.0",
+    "eslint": "^6.0.1",
+    "eslint-config-preact": "^1.1.0",
+    "preact-cli": "^3.0.0-rc.6"
   },
   "devDependencies": {
     "babel-plugin-styled-components": "^1.8.0"
+  },
+  "eslintConfig": {
+    "extends": "preact",
+    "ignorePatterns": [
+      "build/"
+    ]
   }
 }
