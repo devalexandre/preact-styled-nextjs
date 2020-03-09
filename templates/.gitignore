@@ -1,0 +1,16 @@
+# Created by https://www.gitignore.io/api/node
+# Edit at https://www.gitignore.io/?templates=node
+
+### Node ###
+# Logs
+*.log
+
+# Compiled binary addons (https://nodejs.org/api/addons.html)
+build
+
+# Dependency directories
+node_modules/
+.next
+yarn.lock
+
+# End of https://www.gitignore.io/api/node
