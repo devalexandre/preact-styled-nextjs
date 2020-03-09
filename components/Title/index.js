@@ -2,6 +2,6 @@ import { h } from 'preact'
 import * as S from './styled'
 
 
-const Title = () => <S.Title>Preact + NustJS + Styled-Components</S.Title>
+const Title = props => <S.Title>{ props.children } </S.Title>
 
 export default Title
