@@ -1,28 +1,31 @@
 {
-  "name": "{{ name }}",
+  "name": "indevweb",
   "version": "0.0.0",
   "main": "index.js",
   "repository": "https://github.com/devalexandre/preact-styled-nextjs.git",
   "author": "devalexandre <alexandre@indev.net.br>",
   "license": "MIT",
-
   "scripts": {
     "dev": "next",
+    "serve": "yarn run build && sirv build --cors --single",
     "build": "next build && next export -o build",
     "start": "NODE_ENV=production next start",
     "lint": "eslint src"
   },
   "dependencies": {
+    "eslint": "^6.0.1",
+    "eslint-config-preact": "^1.1.0",
     "next": "^9.2.3-canary.21",
+    "next-offline": "^5.0.0",
+    "next-seo": "^4.4.0",
     "preact": "^10.2.1",
+    "preact-cli": "^3.0.0-rc.6",
     "preact-render-to-string": "^5.1.4",
     "react": "github:preact-compat/react#1.0.0",
     "react-dom": "github:preact-compat/react-dom#1.0.0",
     "react-ssr-prepass": "npm:preact-ssr-prepass@^1.0.1",
-    "styled-components": "^4.0.0",
-    "eslint": "^6.0.1",
-    "eslint-config-preact": "^1.1.0",
-    "preact-cli": "^3.0.0-rc.6"
+    "sirv-cli": "^0.4.5",
+    "styled-components": "^4.0.0"
   },
   "devDependencies": {
     "babel-plugin-styled-components": "^1.8.0"

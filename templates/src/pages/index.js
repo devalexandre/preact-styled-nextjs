@@ -1,4 +1,10 @@
 import { h }from 'preact'
  import Title from '../components/Title'
-
-export default () => <Title>Preact + NustJS + Styled-Components</Title>
+ import SEO  from '../components/SEO'
+export default () =>  (
+<SEO title="home" description="Home page">
+<Title>Preact + NustJS + Styled-Components</Title>
+</SEO>
+)
+     
+     

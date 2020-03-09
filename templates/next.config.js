@@ -1,4 +1,10 @@
-module.exports = {
+const withOffline = require('next-offline')
+
+const nextConfig = {
+    compress: true,
+    devIndicators: {
+      autoPrerender: true,
+    },
     experimental: {
       modern: true,
       polyfillsOptimization: true
@@ -26,3 +32,5 @@ module.exports = {
       return config;
     }
   };
+
+  module.exports = withOffline(nextConfig)
